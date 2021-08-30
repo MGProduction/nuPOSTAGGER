@@ -1,10 +1,10 @@
 # nuPOSTAGGER
 
-A very minimal single .h file (English) PosTagger with no external data to load, less than 10KB of static memory used as engine core data and a single call for parsing / postagging of (ANSI) english text
+A very minimal single .h file (English) PosTagger with no external data to load, less than 10KB of static memory used as engine core data and a single call for postagging of (ANSI) english text.
+
+Parsing is also provided but being at the moment out of the scope of this project is just a space-based word split. Being anyway internal parsing possible, functions to handle dynamic token array are also provided
 
 Emitted output uses standard Penn Treebank POS Tagset (as described for instance here: https://www.sketchengine.eu/penn-treebank-tagset/)
-
-Functions to handle dynamic token array are also provided
 
 **note**: quality of this postagger is "poor" (around 91%). This library is meant to be used when memory (and in part, speed) are the most important issues
 
