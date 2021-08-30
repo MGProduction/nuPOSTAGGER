@@ -6,7 +6,7 @@ Emitted output uses standard Penn Treebank POS Tagset (as described for instance
 
 Functions to handle dynamic token array are also provided
 
-*note*: quality of this postagger is "poor" (a little less than 90%). This library is meant to be used when memory (and in part, speed) are the most important issues
+**note**: quality of this postagger is "poor" (around 91%). This library is meant to be used when memory (and in part, speed) are the most important issues
 
 ## Usage
 
@@ -32,7 +32,7 @@ while( -- program need postagging)
   
   nuTokenbag_reset(&tokens);
   
-  nuPosTag(line,&tokens,nu_doparse,NULL);
+  nuPosTag(line,&tokens,nu_doparse);
   
   -- use szPos for each of tokens.nTokens tokens in tokens.Token array for your own need
   
@@ -40,3 +40,8 @@ while( -- program need postagging)
  
 nuTokenbag_delete(&tokens);
 
+## Sample projects
+
+In this repository there are also two console sample projects that uses this little library to let you test its quality.
+
+One is a generic single file console app that should compile under win / linux / mac (**test_Generic.c**) and one is slightly different source code meant to be used with CC65 compiler to create a **C64** program file
