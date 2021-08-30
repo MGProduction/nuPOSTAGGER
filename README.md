@@ -34,7 +34,8 @@ while( -- program need postagging)
   
   nuPosTag(line,&tokens,nu_doparse);
   
-  -- use szPos for each of tokens.nTokens tokens in tokens.Token array for your own need
+  -- use bPos value for each of tokens.nTokens tokens in tokens.Token array for your own need
+     (you can show tag label string from its binary id using nuTagSZ(id) )
   
  }
  
@@ -44,4 +45,4 @@ nuTokenbag_delete(&tokens);
 
 In this repository there are also two console sample projects that uses this little library to let you test its quality.
 
-One is a generic single file console app that should compile under win / linux / mac (**test_Generic.c**) and one is slightly different source code meant to be used with CC65 compiler to create a **C64** program file
+One is a generic single file console app that should compile under win / linux / mac (**sampleapp_Generic.c**) and one is slightly different source code meant to be used with **CC65 compiler** [https://cc65.github.io/] to create a **C64** program file (**sampleapp_C64.c**)
