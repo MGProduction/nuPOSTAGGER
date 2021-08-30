@@ -1,6 +1,6 @@
 // ************************************************************
 //
-//                      nuPOSTAGGER Console
+//                      nuPOSTAGGER Generic
 //                             by
 //                        Marco Giorgini 
 //
@@ -18,8 +18,8 @@
 //
 // ************************************************************
 //
-//  A console sample program that uses nuPOSTAGGER (a minimal English
-//  PosTagger)
+//  A generic console sample program that uses nuPOSTAGGER (a minimal 
+//  English PosTagger)
 //
 //  Enter your text (max two lines), press enter, wait few seconds
 //  and read the postagged information
